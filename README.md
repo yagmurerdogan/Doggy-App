@@ -18,6 +18,10 @@
 - [Glide](https://github.com/bumptech/glide)
 - [Dot Loader](https://github.com/bhargavms/DotLoader)
 
+## 👩🏻‍💻 Dog API
+
+[Click](https://dog.ceo/dog-api/) for API details.
+
 <h1 align="center"> Preview 👀 </h1>
 
 <h4 align="center">
