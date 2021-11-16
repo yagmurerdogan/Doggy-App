@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DogsImages</string>
+    <string name="refresh_image">Refresh Image</string>
+    <string name="dog_image">Dog Image</string>
+</resources>

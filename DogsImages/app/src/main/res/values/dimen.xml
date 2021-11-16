@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DP Resources -->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="seven_dp">7dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="twenty_six_dp">26dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+</resources>
