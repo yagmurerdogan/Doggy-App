@@ -18,6 +18,7 @@
 - [Glide](https://github.com/bumptech/glide)
 - [Dot Loader](https://github.com/bhargavms/DotLoader)
 - [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
+- [Lottie](https://lottiefiles.com/)
 
 ## 👩🏻‍💻 Dog API
 
