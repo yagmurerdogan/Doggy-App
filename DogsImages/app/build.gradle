@@ -67,4 +67,7 @@ dependencies {
 
     //Dot loader
     implementation 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+
+    // Lottie
+    implementation 'com.airbnb.android:lottie:4.2.0'
 }
