@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_dog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".DogFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/twenty_six_dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:contentDescription="@string/refresh_image"
+        android:focusable="true"
+        android:tint="@color/white"
+        app:rippleColor="@color/white"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/dots_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/twenty_dp"
+        android:layout_marginTop="@dimen/thirty_dp"
+        app:lazyloader_animDur="400"
+        app:lazyloader_dotsDist="@dimen/ten_dp"
+        app:lazyloader_dotsRadius="@dimen/seven_dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="@color/white"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="@color/white"
+        app:lazyloader_thirdDotColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_random_dog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/zero_dp"
+        android:contentDescription="@string/dog_image"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

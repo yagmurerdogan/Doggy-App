@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dogFragment">
+    <fragment
+        android:id="@+id/dogFragment"
+        android:name="com.yagmurerdogan.dogsimages.DogFragment"
+        android:label="fragment_dog"
+        tools:layout="@layout/fragment_dog" />
+</navigation>
