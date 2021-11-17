@@ -17,6 +17,7 @@
 - [Retrofit](https://square.github.io/retrofit/)
 - [Glide](https://github.com/bumptech/glide)
 - [Dot Loader](https://github.com/bhargavms/DotLoader)
+- [Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
 
 ## 👩🏻‍💻 Dog API
 
