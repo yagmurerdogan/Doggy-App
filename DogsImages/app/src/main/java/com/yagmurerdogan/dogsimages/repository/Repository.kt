@@ -10,5 +10,4 @@ class Repository {
     suspend fun getRandomDogImage() : Response<ApiModel> {
         return RetrofitInstance.api.getRandomDog()
     }
-
 }

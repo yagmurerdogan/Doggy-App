@@ -1,4 +1,4 @@
-package com.yagmurerdogan.dogsimages.utils
+package com.yagmurerdogan.dogsimages.utils.extensions
 
 import android.content.Context
 import android.view.View
@@ -12,5 +12,12 @@ fun ImageView.load(imageUrl: String, context: Context) {
         .load(imageUrl)
         .into(this)
 
+}
+
+fun View.setVisible() {
     this.visibility = View.VISIBLE
+}
+
+fun View.setInvisible() {
+    this.visibility = View.INVISIBLE
 }

@@ -4,21 +4,14 @@ import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
-import com.yagmurerdogan.dogsimages.api.SimpleApi
 import com.yagmurerdogan.dogsimages.databinding.ActivityMainBinding
-import com.yagmurerdogan.dogsimages.model.ApiModel
 import com.yagmurerdogan.dogsimages.repository.Repository
-import com.yagmurerdogan.dogsimages.utils.Constants.Companion.BASE_URL
-import com.yagmurerdogan.dogsimages.utils.load
-import kotlinx.coroutines.*
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.yagmurerdogan.dogsimages.utils.extensions.load
+import com.yagmurerdogan.dogsimages.utils.extensions.setInvisible
+import com.yagmurerdogan.dogsimages.utils.extensions.setVisible
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             }.start()
 
             setImage()
-            binding.ivRandomDog.visibility = View.GONE
+            binding.ivRandomDog.setInvisible()
 
         }
     }
@@ -66,12 +59,14 @@ class MainActivity : AppCompatActivity() {
     private fun setImage() {
         viewModel.getDogImage()
         viewModel.myResponse.observe(this, Observer { response ->
-            if(response.isSuccessful) {
-                binding.ivRandomDog.load(response.body()?.url.toString(),applicationContext)
-                Log.e("Response", response.body()?.url.toString())
+            if (response.isSuccessful) {
+                with(binding.ivRandomDog) {
+                    load(response.body()?.url.toString(), applicationContext)
+                    setVisible()
+                }
                 Log.e("Response", response.body()?.status.toString())
             } else {
-                Log.e("Response",response.errorBody().toString())
+                Log.e("Response", response.errorBody().toString())
             }
         })
     }
