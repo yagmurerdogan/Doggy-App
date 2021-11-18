@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_dog"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list"
     tools:context=".DogFragment">
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/twenty_six_dp"
-        android:backgroundTint="@color/white"
-        android:clickable="true"
-        android:contentDescription="@string/refresh_image"
-        android:focusable="true"
-        android:tint="@color/white"
-        app:rippleColor="@color/white"
-        app:srcCompat="@android:drawable/stat_notify_sync" />
 
     <com.agrawalsuneet.dotsloader.loaders.LazyLoader
         android:id="@+id/dots_loading"
@@ -29,7 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="@dimen/twenty_dp"
-        android:layout_marginTop="@dimen/thirty_dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_random_dog"
+        app:layout_constraintEnd_toStartOf="@+id/iv_random_dog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_random_dog"
+        app:layout_constraintTop_toBottomOf="@+id/iv_random_dog"
         app:lazyloader_animDur="400"
         app:lazyloader_dotsDist="@dimen/ten_dp"
         app:lazyloader_dotsRadius="@dimen/seven_dp"
@@ -47,6 +36,8 @@
         android:layout_centerInParent="true"
         android:layout_margin="@dimen/zero_dp"
         android:contentDescription="@string/dog_image"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="-56dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

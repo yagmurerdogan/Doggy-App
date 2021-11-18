@@ -6,10 +6,16 @@
         <entry key="app/src/main/res/drawable/gradient_1.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/drawable/gradient_2.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/drawable/gradient_3.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.42552083333333335" />
+        <entry key="app/src/main/res/drawable/ic_fav.xml" value="0.42552083333333335" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.19074074074074074" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957155491560837" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.39479166666666665" />
+        <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.3953125" />
         <entry key="app/src/main/res/layout/fragment_dog.xml" value="0.39479166666666665" />
+        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.409375" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.39479166666666665" />
       </map>
     </option>
   </component>

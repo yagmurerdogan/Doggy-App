@@ -10,6 +10,12 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.yagmurerdogan.dogsimages.databinding.FragmentDogBinding
 import com.yagmurerdogan.dogsimages.repository.Repository
 import com.yagmurerdogan.dogsimages.utils.extensions.load
@@ -45,19 +51,6 @@ class DogFragment : Fragment() {
         backgroundAnimation()
 
         setImage()
-
-        binding.floatingActionButton.setOnClickListener {
-
-            // FAB rotate animation
-            binding.floatingActionButton.animate().apply {
-                rotationBy(360f)
-                duration = 1000
-            }.start()
-
-            setImage()
-            binding.ivRandomDog.setInvisible()
-
-        }
     }
 
     private fun backgroundAnimation() {

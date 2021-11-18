@@ -3,19 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/dogFragment">
     <fragment
         android:id="@+id/dogFragment"
         android:name="com.yagmurerdogan.dogsimages.DogFragment"
         android:label="fragment_dog"
         tools:layout="@layout/fragment_dog" />
     <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.yagmurerdogan.dogsimages.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
-        <action
-            android:id="@+id/action_splashFragment_to_dogFragment"
-            app:destination="@id/dogFragment" />
-    </fragment>
+        android:id="@+id/bookmarkFragment"
+        android:name="com.yagmurerdogan.dogsimages.utils.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.yagmurerdogan.dogsimages.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
 </navigation>
