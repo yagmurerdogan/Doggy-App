@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         with(binding.bottomNavView) {
             background = null
             menu.getItem(1).isEnabled = false
+            itemIconTintList = null
         }
 
         val navHostFragment =

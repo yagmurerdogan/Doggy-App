@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/favoritesFragment"
-        android:icon="@drawable/ic_fav"
-        android:title="Favorites" />
+        android:icon="@drawable/fav_bottom_selector"
+        android:title="Favorites"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/placeholder"
@@ -12,6 +13,7 @@
 
     <item
         android:id="@+id/bookmarkFragment"
-        android:icon="@drawable/ic_bookmark"
-        android:title="Bookmark" />
+        android:icon="@drawable/bookmark_bottom_selector"
+        android:title="Bookmark"
+        app:showAsAction="ifRoom"/>
 </menu>

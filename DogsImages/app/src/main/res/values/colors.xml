@@ -14,4 +14,10 @@
     <color name="red">#e91663</color>
     <color name="orange">#ff5722</color>
     <color name="pink">#e91e63</color>
+    <color name="yellow">#F3C03F</color>
+    <color name="yellow_soft">#FFF59D</color>
+    <color name="red_light">#F33F3F</color>
+    <color name="red_soft">#EF9A9A</color>
+    <color name="purple">#5A3FF3</color>
+    <color name="purple_soft">#9FA8DA</color>
 </resources>

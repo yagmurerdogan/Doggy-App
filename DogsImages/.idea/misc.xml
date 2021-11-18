@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_bookmark_unselected.xml" value="0.38333333333333336" />
+        <entry key="app/src/main/res/drawable-v24/ic_fav_unselected.xml" value="0.38333333333333336" />
+        <entry key="app/src/main/res/drawable-v24/ic_pet_unselected.xml" value="0.38333333333333336" />
+        <entry key="app/src/main/res/drawable/bookmark_bottom_selector.xml" value="0.38333333333333336" />
+        <entry key="app/src/main/res/drawable/fav_bottom_selector.xml" value="0.38333333333333336" />
         <entry key="app/src/main/res/drawable/gradient_1.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/drawable/gradient_2.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/drawable/gradient_3.xml" value="0.19074074074074074" />
         <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.42552083333333335" />
         <entry key="app/src/main/res/drawable/ic_fav.xml" value="0.42552083333333335" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.19074074074074074" />
+        <entry key="app/src/main/res/drawable/ic_pet.xml" value="0.4109375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2957155491560837" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.39479166666666665" />
         <entry key="app/src/main/res/layout/fragment_bookmark.xml" value="0.3953125" />

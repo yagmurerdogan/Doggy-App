@@ -22,14 +22,18 @@
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="8dp"
+        app:contentInsetStart="0dp"
+        app:fabCradleRoundedCornerRadius="15dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
             android:background="@android:color/transparent"
+            app:elevation="0dp"
+            app:itemIconTint="@color/pink"
             app:menu="@menu/bottom_menu" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
@@ -40,6 +44,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="Generate dog image"
         android:src="@drawable/ic_pet"
-        app:layout_anchor="@id/bottomAppBar" />
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@color/yellow" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
