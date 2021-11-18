@@ -32,3 +32,7 @@
 - Retrofit @GET Request [YouTube Tutorial!](https://www.youtube.com/watch?v=sBCE_hOFnQU)
 - Random Dog App [YouTube Tutorial!](https://www.youtube.com/watch?v=Da0upNOmoQ0&t=6s)
 - Bottom App Bar [YouTube Tutorial!](https://www.youtube.com/watch?v=x6-_va1R788)
+
+<p align="right">
+ <img src="https://user-images.githubusercontent.com/47380312/142381358-bb94e2e9-8e4a-4845-b072-92f00060f5f4.png" width="100" height="100"/>
+</p>
