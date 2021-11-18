@@ -32,5 +32,5 @@
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/47380312/142202808-2562c8a8-3a80-4aba-a3c6-7dbf391b4e39.gif" width="32%"/>
-<img src="https://user-images.githubusercontent.com/47380312/142047899-b349daaa-64b8-4e66-9c2f-d7ac6e2fe99b.gif" width="32%"/>
+<img src="https://user-images.githubusercontent.com/47380312/142371718-8e8eb3a7-343f-42f7-a418-cfec836b8dea.gif" width="32%"/>
 </p>
