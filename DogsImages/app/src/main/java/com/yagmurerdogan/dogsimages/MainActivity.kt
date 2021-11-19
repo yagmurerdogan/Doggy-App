@@ -1,17 +1,16 @@
 package com.yagmurerdogan.dogsimages
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.yagmurerdogan.dogsimages.databinding.ActivityMainBinding
-import com.yagmurerdogan.dogsimages.utils.extensions.setInvisible
-import com.yagmurerdogan.dogsimages.utils.extensions.setVisible
+import com.yagmurerdogan.dogsimages.utils.extensions.closeCheckable
+import com.yagmurerdogan.dogsimages.utils.extensions.openCheckable
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         with(binding.bottomNavView) {
+            closeCheckable()
             background = null
             menu.getItem(1).isEnabled = false
             itemIconTintList = null
@@ -29,15 +29,16 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.bottomNavView, navHostFragment.navController)
 
         navHostFragment.navController.addOnDestinationChangedListener { controller, destination, arguments ->
-            when(destination.id) {
-                R.id.splashFragment -> binding.bottomNavView.setInvisible()
-                else -> binding.bottomNavView.setVisible()
+            if (destination.id == R.id.favoritesFragment || destination.id == R.id.bookmarkFragment) {
+                with(binding.bottomNavView) {
+                    openCheckable()
+                }
             }
         }
 
         binding.fab.setOnClickListener {
-            val intent = Intent(this@MainActivity, MainActivity::class.java)
-            startActivity(intent)
+            binding.bottomNavView.closeCheckable()
+            navHostFragment.navController.navigateUp()
         }
     }
 }

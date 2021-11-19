@@ -33,7 +33,6 @@
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             app:elevation="0dp"
-            app:itemIconTint="@color/pink"
             app:menu="@menu/bottom_menu" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>

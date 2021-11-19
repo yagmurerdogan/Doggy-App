@@ -4,7 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.yagmurerdogan.dogsimages.repository.Repository
 
-
 class DogViewModelFactory(
     private val repository: Repository
 ) : ViewModelProvider.Factory {
