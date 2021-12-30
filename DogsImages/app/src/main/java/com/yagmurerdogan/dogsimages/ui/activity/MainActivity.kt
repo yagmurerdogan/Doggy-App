@@ -1,9 +1,10 @@
-package com.yagmurerdogan.dogsimages
+package com.yagmurerdogan.dogsimages.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.yagmurerdogan.dogsimages.R
 import com.yagmurerdogan.dogsimages.databinding.ActivityMainBinding
 import com.yagmurerdogan.dogsimages.utils.extensions.closeCheckable
 import com.yagmurerdogan.dogsimages.utils.extensions.openCheckable

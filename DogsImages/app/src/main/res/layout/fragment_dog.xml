@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list"
-    tools:context=".DogFragment">
+    tools:context=".ui.fragment.DogFragment">
 
     <com.agrawalsuneet.dotsloader.loaders.LazyLoader
         android:id="@+id/dots_loading"

@@ -1,4 +1,4 @@
-package com.yagmurerdogan.dogsimages
+package com.yagmurerdogan.dogsimages.ui.fragment
 
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
@@ -10,21 +10,16 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavController
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.yagmurerdogan.dogsimages.DogFragmentViewModel
+import com.yagmurerdogan.dogsimages.DogViewModelFactory
 import com.yagmurerdogan.dogsimages.databinding.FragmentDogBinding
 import com.yagmurerdogan.dogsimages.repository.Repository
+import com.yagmurerdogan.dogsimages.ui.base.BaseFragment
 import com.yagmurerdogan.dogsimages.utils.extensions.load
-import com.yagmurerdogan.dogsimages.utils.extensions.setInvisible
 import com.yagmurerdogan.dogsimages.utils.extensions.setVisible
 
-class DogFragment : Fragment() {
+class DogFragment : BaseFragment<FragmentDogBinding>(FragmentDogBinding::inflate) {
 
-    private lateinit var binding: FragmentDogBinding
     private lateinit var viewModel: DogFragmentViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,14 +28,6 @@ class DogFragment : Fragment() {
         val repository = Repository()
         val viewModelFactory = DogViewModelFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory)[DogFragmentViewModel::class.java]
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentDogBinding.inflate(inflater, container, false)
-        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
