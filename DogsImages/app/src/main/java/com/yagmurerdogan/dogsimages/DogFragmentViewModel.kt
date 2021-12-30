@@ -18,7 +18,9 @@ class DogFragmentViewModel(
     fun getDogImage() {
         viewModelScope.launch {
             val response: Response<ApiModel> = repository.getRandomDogImage()
-            myResponse.value = response
+            if (response.isSuccessful) {
+                myResponse.value = response
+            }
         }
     }
 }

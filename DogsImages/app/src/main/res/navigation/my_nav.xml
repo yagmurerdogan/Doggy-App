@@ -19,4 +19,7 @@
         android:name="com.yagmurerdogan.dogsimages.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
+    <action
+        android:id="@+id/toDogFragment"
+        app:destination="@id/dogFragment"/>
 </navigation>

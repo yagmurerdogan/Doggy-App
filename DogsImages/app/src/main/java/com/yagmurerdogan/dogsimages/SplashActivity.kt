@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.yagmurerdogan.dogsimages.databinding.ActivitySplashBinding
+import kotlinx.coroutines.delay
 
 class SplashActivity : AppCompatActivity() {
 
@@ -16,10 +18,11 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Handler(Looper.myLooper()!!).postDelayed({
+        lifecycleScope.launchWhenCreated {
+            delay(4000)
             val intent = Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
-        },4000)
+        }
     }
 }

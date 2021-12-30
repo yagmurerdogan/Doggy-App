@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.fab.setOnClickListener {
             binding.bottomNavView.closeCheckable()
-            navHostFragment.navController.navigateUp()
+            navHostFragment.navController.navigate(R.id.toDogFragment)
         }
     }
 }
