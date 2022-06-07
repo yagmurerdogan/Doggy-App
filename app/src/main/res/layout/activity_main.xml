@@ -23,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:fabCradleMargin="8dp"
         app:contentInsetStart="0dp"
+        app:fabCradleMargin="8dp"
         app:fabCradleRoundedCornerRadius="15dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -41,7 +41,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Generate dog image"
+        android:contentDescription="@string/generate_dog_image"
         android:src="@drawable/ic_pet"
         app:layout_anchor="@id/bottomAppBar"
         app:tint="@color/yellow" />

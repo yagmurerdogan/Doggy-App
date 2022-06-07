@@ -24,7 +24,6 @@ class DogFragment : BaseFragment<FragmentDogBinding>(FragmentDogBinding::inflate
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val repository = Repository()
         val viewModelFactory = DogViewModelFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory)[DogFragmentViewModel::class.java]
@@ -32,16 +31,14 @@ class DogFragment : BaseFragment<FragmentDogBinding>(FragmentDogBinding::inflate
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-
         backgroundAnimation()
-
         setImage()
     }
 
     private fun backgroundAnimation() {
-        val animationDrawable: AnimationDrawable = binding.fragmentDog.background as AnimationDrawable
+        val animationDrawable: AnimationDrawable =
+            binding.fragmentDog.background as AnimationDrawable
         animationDrawable.apply {
             setEnterFadeDuration(1000)
             setExitFadeDuration(3000)
