@@ -2,8 +2,8 @@
 
 object Versions {
 
-    const val gradleVersion = "7.0.2"
-    const val kotlinVersion = "1.5.30"
+    const val gradleVersion = "7.2.1"
+    const val kotlinVersion = "1.6.21"
     const val coreKtxVersion = "1.7.0"
     const val appCompatVersion = "1.4.1"
     const val constraintLayoutVersion = "2.1.3"

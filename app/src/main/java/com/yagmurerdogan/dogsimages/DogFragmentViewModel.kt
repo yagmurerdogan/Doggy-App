@@ -8,7 +8,6 @@ import com.yagmurerdogan.dogsimages.repository.Repository
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
-
 class DogFragmentViewModel(
     private val repository: Repository
 ) : ViewModel() {
